@@ -1,0 +1,10 @@
+.navbar{
+    margin: 5vmin auto;
+    height: 15vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:flex-start;
+    justify-content:space-around;
+    text-shadow:0 0 10px #ffaade;
+    color: #ffffff;
+}

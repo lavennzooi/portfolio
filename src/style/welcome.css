@@ -1,32 +1,63 @@
+.Welcome-header {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-items: center;
+    color: var(--pearl);
+}
+
+.logo-container {
+    height: 125px;
+    width:125px;
+    overflow:hidden;
+    border-radius: 50%;
+}
 
 .Welcome-logo {
-height: 40vmin;
-pointer-events: none;
-border-radius: 50%;
+    height: 150px;
+    pointer-events: none;
+    margin-top:-13px;
+    margin-left:-13px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-.Welcome-logo {
-    animation: Welcome-logo-spin infinite 30s linear;
-}
-}
-
-.Welcome-header {
-background-color: var(--deep-violet);
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-font-size: calc(10px + 2vmin);
-color: white;
+    .Welcome-logo {
+        animation: Welcome-logo-spin infinite 10s linear;
+    }
 }
 
 @keyframes Welcome-logo-spin {
-from {
-    transform: rotate(0deg);
+    from {
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
 }
-to {
-    transform: rotate(360deg);
+
+#intro{
+    font-size: calc(1.5rem + 2vmin);
+    font-weight:700;
+    margin: 10% 0;
 }
+
+#intro .name{
+    color:var(--mustard);
+}
+
+#tagline{
+    font-size:calc(0.05rem + 2vmin);
+    font-weight:300;
+    color: var(--mint);
+    letter-spacing:0.18em;
+}
+
+#description{
+    margin: 8% auto;
+    font-size:calc(0.1rem + 2vmin);
+    font-weight:200;
+    line-height:1.5em;
 }
