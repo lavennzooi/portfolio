@@ -9,13 +9,13 @@ class Nav extends React.Component {
 
         return (
             <nav>
-                <HashLink className="navTab" to="/#about" smooth={true} duration={500}>
+                <HashLink className="navTab" to="/portfolio/#about" smooth={true} duration={500}>
                     ABOUT
                 </HashLink>
-                <HashLink className="navTab" to="/#expertise" smooth={true} duration={500}>
+                <HashLink className="navTab" to="/portfolio/#expertise" smooth={true} duration={500}>
                     EXPERTISE
                 </HashLink>
-                <HashLink className="navTab" to="/#experience" smooth={true} duration={500}>
+                <HashLink className="navTab" to="/portfolio/#experience" smooth={true} duration={500}>
                     EXPERIENCES
                 </HashLink>
                 <Link className="navTab" to='#' 
