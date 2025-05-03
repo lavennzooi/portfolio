@@ -11,7 +11,7 @@ class Welcome extends React.Component {
 
         return ( 
             <div className="welcome">
-                <Link to="/" reloadDocument className="intro">Hey, <br/> I'm Sinyee Ooi</Link>
+                <Link to="/portfolio/" reloadDocument className="intro">Hey, <br/> I'm Sinyee Ooi</Link>
                 <div className="tagline">{[tagline]}</div>
                 <div className="description">{[description]}</div>
             </div>

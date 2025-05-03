@@ -17,9 +17,9 @@ html{
   }
  
   main {
-    margin: 5% auto 5% auto;
+    margin: 2% auto;
     width:60%;
-    max-width:1600px;
+    max-width:1400px;
     min-width:1200px;
     overflow:visible;
     display: flex;
@@ -34,7 +34,7 @@ html{
     flex-flow:column nowrap;
     align-items:flex-start;
     justify-items:space-around;
-    flex: 1 0 400px;
+    flex: 0 0 400px;
     z-index: 3;
   }
  
@@ -50,14 +50,14 @@ html{
   }
  
   content{
-    margin: 5% auto 0 auto;
+    margin: 8% auto 0 auto;
     height:100vmax;
     min-height:fit-content;
     display:flex;
     flex-flow: column nowrap;
     align-items:flex-start;
     flex: 4 1 auto;
-    gap:7%;
+    gap:10em;
     z-index:3;
   }
 }

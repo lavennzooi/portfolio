@@ -27,7 +27,7 @@ nav{
 .navTab:active{
     font-size:3rem;
     font-weight:700;
-    color: var(--hotPink);
+    color: var(--mint);
 } 
 
 .navTab::content{
