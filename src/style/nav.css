@@ -1,10 +1,37 @@
-.navbar{
-    margin: 5vmin auto;
-    height: 15vh;
+nav{
+    height:20%;
     display: flex;
     flex-flow: column nowrap;
     align-items:flex-start;
-    justify-content:space-around;
-    text-shadow:0 0 10px #ffaade;
-    color: #ffffff;
+    justify-items:flex-start;
+    justify-content:space-evenly;
+    gap:2%;
 }
+
+.navTab, ButtonMailto{
+    display: flex;
+    font-size: calc(1.25rem + 1.25vmin);
+    font-weight:700;
+    color: var(--steel);
+    text-decoration:none;
+}
+
+.navTab:hover {
+    font-size:calc(2rem + 1.25vmin);
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    color: var(--mint);
+}
+
+.navTab:active{
+    font-size:3rem;
+    font-weight:700;
+    color: var(--hotPink);
+} 
+
+.navTab::content{
+    font-size:3rem;
+    font-weight:700;
+    color: var(--hotPink);
+} 

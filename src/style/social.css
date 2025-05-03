@@ -1,0 +1,41 @@
+/*computer*/
+@media only screen and (min-width:1280px) and (min-height:800px){
+    .social{
+        height:30%;
+        display:flex;
+        flex-flow: row nowrap;
+        align-items:flex-end;
+        justify-content:space-evenly;
+        gap:15%;
+    }
+    
+    .social-img {
+        width:2rem;
+        height:2rem;
+        filter:saturate(0);
+    }
+    
+    .social-img:hover {
+        -moz-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        filter:saturate(1.5);
+        transform: scale(1.5);
+    }
+}
+
+/*tablet & mobile*/
+@media screen and (max-width:1279px), screen and (max-height:799px){
+    .social{
+        padding:1vh 0;
+        display:flex;
+        flex-flow: row nowrap;
+        align-items:center;
+        justify-content:center;
+        gap:10%;
+    }
+    .social-img {
+        width:5vh;
+        height:auto;
+    }
+}

@@ -1,0 +1,94 @@
+#expertise {
+    display:flex;
+    flex-flow:column nowrap;
+    align-content:flex-start;
+    align-items:flex-start;
+    scroll-margin-top: 5vh;
+}
+
+.toolBox {
+    display:flex;
+    flex-flow:row wrap;
+    align-items:stretch;
+    justify-content:space-between;
+    gap:2%;
+}
+
+
+
+@media only screen and (min-width:1280px){
+    .toolTab {
+        border-radius:15px;
+        padding:2% 2% 5% 2%;
+        display:flex;
+        flex-flow:column wrap;
+        flex:1 1 27%;
+        position: relative;
+        font-weight:600;
+        font-size:1.05rem;
+        border:double var(--mint);
+        background:linear-gradient(180deg, rgba(0, 147, 173, 0.11) 0%, rgba(237, 222, 243, 0) 100%);
+    } 
+    
+    .toolTab:hover {
+        background:linear-gradient(180deg, rgba(0, 147, 173, 0.363) 0%, rgba(237, 222, 243, 0) 100%);
+        -moz-transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        transform: scale(1.15);
+        z-index:5;
+        cursor:none;
+    }
+}
+
+@media only screen and (max-width:1279px){
+    .toolTab {
+        display:inline-block;
+        margin:3vh 0;
+        padding:5%;
+        background:linear-gradient(180deg, rgba(171, 250, 253, 0.11) 0%, rgba(237, 222, 243, 0) 100%);
+        border-top:3px solid var(--mint);
+    }
+}
+
+.toolTab h1 {
+    color: var(--hotPink);
+}
+
+
+.toolIcon1{
+    display:inline-block;
+    width: 30px;
+    height:30px;
+    margin-right:10px;
+    background-size: 30px 30px;
+    background-image: url(../assets/icon/dev.png);
+    filter: invert(100%);
+}
+
+.toolIcon2{
+    display:inline-block;
+    width: 30px;
+    height:30px;
+    margin-right:10px;
+    background-size: 30px 30px;
+    background-image: url(../assets/icon/solution.png);
+    filter: invert(100%);
+}
+
+.toolIcon3{
+    display:inline-block;
+    width: 30px;
+    height:30px;
+    margin-right:10px;
+    background-size: 30px 30px;
+    background-image: url(../assets/icon/design.png);
+    filter: invert(100%);
+}
+
+.toolInfo {
+    display:inline-block;
+    text-align:left;
+    line-height:1.5em;
+}
+
