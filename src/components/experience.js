@@ -6,7 +6,7 @@ class Experience extends React.Component {
     render(){
 
         const work = [{
-            year: "2024 - Present",
+            year: "2022 - Present",
             company: "Samsung Semiconductor",
             role: "Software Engineer II",
             description: `Led development of digital transformation projects with cross-function teams, such as developers and process engineers. We delivered various type of customer-focused solutions, includes web application and production automation, replaced manual process with 99% of time saving, 55% stronger quality control  and over 1 million of cost saving annually.`,
