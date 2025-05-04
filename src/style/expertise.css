@@ -31,13 +31,12 @@
     } 
     
     .toolTab:hover {
-        background:linear-gradient(180deg, rgba(0, 147, 173, 0.363) 0%, rgba(237, 222, 243, 0) 100%);
+        background:radial-gradient( circle at center, var(--warm-carbon) 0%,var(--deep-carbon)  100%);
         -moz-transition: all 0.4s ease-in-out;
         -webkit-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out;
-        transform: scale(1.15);
+        transform: scale(1.5);
         z-index:5;
-        cursor:none;
     }
 }
 

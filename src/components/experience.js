@@ -1,4 +1,5 @@
 import React from 'react';
+import { Collapsible } from './Collapsible';
 import '../style/experience.css'
 
 class Experience extends React.Component {
@@ -31,27 +32,21 @@ class Experience extends React.Component {
             skills: ["C++", "C", "Data Analysis", "Root Cause Analysis"]
         }]
 
-
         return (
             <div id="experience">
                 <header>{"// experience"}</header>
                 <section className="xp-container">
                     {work.map((work, index) => (
-                        <div className='xpTab'>
-                            <div className="xpTab-top">
-                                <div key={index} className="header">{[work.year]}</div>
-                                <div className="content">
-                                    <h3 key={index}>{[work.company]}</h3>
-                                    <h4 key={index}>{[work.role]}</h4>
-                                    <div key={index} className="info">{[work.description]}</div>
-                                    <div className="xpTab-foot">
-                                        {work.skills.map((skills, index) => (
-                                            <span key={index} className="skill-pill">{[skills]}</span>
-                                        ))}
-                                    </div>
-                                </div>
+                        <Collapsible title={[work.year]}>
+                            <h3 key={index}>{[work.company]}</h3>
+                            <h4 key={index}>{[work.role]}</h4>
+                            <div key={index}>{[work.description]}</div>
+                            <div className="skill">
+                                {work.skills.map((skills, index) => (
+                                    <span key={index} className="pill">{[skills]}</span>
+                                ))}
                             </div>
-                        </div>
+                        </Collapsible>
                     ))}
                 </section>
             </div>

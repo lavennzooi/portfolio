@@ -18,6 +18,9 @@ class Nav extends React.Component {
                 <HashLink className="navTab" to="/portfolio/#experience" smooth={true} duration={500}>
                     EXPERIENCES
                 </HashLink>
+                <HashLink className="navTab" to="/portfolio/#projects" smooth={true} duration={500}>
+                    PROJECTS
+                </HashLink>
                 <Link className="navTab" to='#' 
                     onClick = {() => window.location = "mailto:sinyee_ooi@yahoo.com" }
                 >

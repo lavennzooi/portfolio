@@ -5,9 +5,10 @@ import './App.css';
 import Welcome from './components/welcome';
 import Nav from './components/nav';
 import About from './components/about';
-import Experience from './components/experience';
 import Expertise from './components/expertise';
 import Social from './components/social';
+import Experience from './components/experience';
+import Projects from './components/projects';
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
             <About></About>
             <Expertise></Expertise>
             <Experience></Experience>
+            <Projects></Projects>
           </content>
         </main>
         <HashLink className="top" to="/#backlight" smooth={true} duration={500} />
