@@ -1,6 +1,9 @@
 #projects{
+    width:100%;
     display:flex;
     flex-flow:column nowrap;
+    align-content:flex-start;
+    align-items:flex-start;
     scroll-margin-top: 5vh;
 }
 
@@ -8,11 +11,11 @@
     display:flex;
     flex-flow:column nowrap;
     align-items:flex-start;
+    gap:4%;
 }
 
 .Tab{
-    width:90%;
-    padding:4%;
+    width:100%;
     display:flex;
     flex-flow:column wrap;
     gap:20px;
@@ -27,6 +30,7 @@
 } 
 
 .Tab .content{
+    padding:4%;
     display:flex;
     flex-basis:80%;
     flex-flow:column nowrap;
@@ -37,6 +41,17 @@
     gap:15px;
 }
 
-.Tab .content h3, .Tab .content h5{
+.Tab .content h3{
     margin:0; 
+    color: var(--pearl);
+}
+
+.Tab .content h5{
+    margin:0; 
+    color: var(--carbon);
+}
+
+.Tab .content .skill .pill {
+    color:var(--babyPurple);
+    background:var(--deep-carbon);
 }

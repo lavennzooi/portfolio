@@ -9,6 +9,8 @@ import Expertise from './components/expertise';
 import Social from './components/social';
 import Experience from './components/experience';
 import Projects from './components/projects';
+import Avatar from './components/avatar';
+import goTop from './assets/icon/straight.png'
 
 
 function App() {
@@ -31,7 +33,7 @@ function App() {
     <div id="App">
       <Router>
         <main>
-          <div className="backlight"/>
+          <div id="backlight"/>
           <aside>
             <div className="Info">
               <Welcome></Welcome>
@@ -44,9 +46,12 @@ function App() {
             <Expertise></Expertise>
             <Experience></Experience>
             <Projects></Projects>
+            <Avatar></Avatar>
           </content>
         </main>
-        <HashLink className="top" to="/#backlight" smooth={true} duration={500} />
+        <HashLink to="/#backlight" smooth={true} duration={500}>
+          <img className="goTop" src={[goTop]} alt="Go to Top"/>
+        </HashLink>
       </Router>
     </div>
   );

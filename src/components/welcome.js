@@ -10,7 +10,7 @@ class Welcome extends React.Component {
         const description = "I'm ambitious about engineering simple solutions from complex problems — scaleable, intuitive and world-changing.";
 
         return ( 
-            <div className="welcome">
+            <div id="welcome">
                 <Link to="/portfolio/" reloadDocument className="intro">Hey, <br/> I'm Sinyee Ooi</Link>
                 <div className="tagline">{[tagline]}</div>
                 <div className="description">{[description]}</div>

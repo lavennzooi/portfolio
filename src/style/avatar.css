@@ -1,0 +1,115 @@
+#avatar{
+    width:100%;
+    display:flex;
+    flex-flow:column nowrap;
+    align-content:flex-start;
+    align-items:flex-start;
+    scroll-margin-top: 5vh;
+}
+
+@media only screen and (min-width:1200px) and (min-height:800px){
+
+    footer, .copyright{
+        display:none;
+    }
+}
+
+@media only screen and (max-height:800px){
+
+    footer{
+        width:100%;
+        padding-bottom:5%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content:space-around;
+        border-bottom:1px solid var(--carbon);
+    }
+    
+    footer .navTab, footer .navTab:hover, footer .navTab:active{
+        display: flex;
+        text-decoration:none;
+        color:var(--steel);
+        font-size:0.85rem;
+        font-weight:300;
+        outline:none;
+    }
+    
+    .copyright{
+        padding-top:5%;
+        align-self:center;
+        text-decoration:none;
+        color:var(--steel);
+        font-size:0.85rem;
+        font-weight:300;
+    }
+}
+
+.avatar-outer{
+    margin:-10% auto 10% auto;
+}
+
+.avatar-outer{
+    width:340px;
+    height:340px;
+    display:flex;
+    align-self:center;
+    justify-content:center;
+    align-content:center;
+    border-radius:100%;
+    border:1px solid var(--carbon);
+    background:var(--lilac);
+}
+
+.avatar-box {
+    width:300px;
+    height:300px;
+    display:flex;
+    align-self:center;
+    justify-self:center;
+    border-radius:100%;
+    overflow:hidden;
+}
+
+.avatar{
+    width:100%;
+    z-index:4;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .avatar-outer {
+        animation: avatar-outer-spin infinite 10s linear;
+    }
+    .avatar {
+        animation: avatar-spin infinite 10s linear;
+    }
+}
+
+@keyframes  avatar-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes avatar-outer-spin {
+    from {
+        background:var(--lilac);
+    }
+    25% {
+        background:var(--mint);
+    }
+    50% {
+        background:var(--hotPink);
+    }
+    75% {
+        background:var(--mint);
+    }
+    100% {
+        background:var(--lilac);
+    }
+}

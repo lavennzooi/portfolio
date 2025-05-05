@@ -21,7 +21,7 @@
     border:none;
     outline:none;
     background-color: rgba(0, 0, 0, 0.3);
-    border-bottom:1px solid rgba(255, 176, 193, 0.26);
+    border-bottom:1px solid var(--mauve);
     border-radius: 15px;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -31,8 +31,8 @@
 .xp-container .collapsible-title{
     padding:2%;
     font-family: Alike;
-    font-size:1.25rem;
-    background:rgba(255, 176, 193, 0.26);
+    font-size:1.05rem;
+    background:var(--mauve);
     color:var(--babyPink);
     border:none;
     outline:none;
@@ -43,7 +43,7 @@
 }
 
 .xp-container .collapsible-content{
-    padding:0 4%;
+    padding:4%;
     display:flex;
     flex-flow:column nowrap;
     align-items:flex-start;
@@ -60,7 +60,6 @@
 }
 
 .skill {
-    padding: 3% 0 5% 0;
     display:flex;
     flex-flow: row wrap;
     align-content:space-between;

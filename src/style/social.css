@@ -12,14 +12,12 @@
     .social-img {
         width:2rem;
         height:2rem;
-        filter:saturate(0);
     }
     
     .social-img:hover {
         -moz-transition: all 0.3s ease-in-out;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
-        filter:saturate(1.5);
         transform: scale(1.5);
     }
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import '../style/about.css';
-import avatar from '../assets/images/avatar_fun.png'
 
 class About extends React.Component {
     render(){

@@ -1,18 +1,19 @@
 nav{
-    height:20%;
+    height:30%;
     display: flex;
     flex-flow: column nowrap;
     align-items:flex-start;
     justify-items:flex-start;
     justify-content:space-evenly;
-    gap:2%;
+    background:linear-gradient(180deg, var(--babyPink) 0%, var(--lilac) 100%);
+    background-clip:text;
 }
 
 .navTab, ButtonMailto{
     display: flex;
     font-size: calc(1.25rem + 1.25vmin);
     font-weight:700;
-    color: var(--steel);
+    color: rgba(255,255,255,0);
     text-decoration:none;
 }
 
@@ -22,16 +23,12 @@ nav{
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
     color: var(--mint);
+    outline:none;
 }
 
 .navTab:active{
     font-size:3rem;
     font-weight:700;
     color: var(--mint);
-} 
-
-.navTab::content{
-    font-size:3rem;
-    font-weight:700;
-    color: var(--hotPink);
+    outline:none;
 } 
