@@ -8,7 +8,6 @@ class Avatar extends React.Component {
     render(){
         return (
             <div id="avatar">
-                <div id="cd-center"/>
                 <div className="avatar-outer">
                     <div className="avatar-box">
                         <img className="avatar" src={[avatar]} alt="avatar"/>
