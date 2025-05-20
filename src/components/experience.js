@@ -22,13 +22,13 @@ class Experience extends React.Component {
             year: "2016 - 2021",
             company: "Lavennz Ooi",
             role: "Creative Entrepreneur",
-            description: "I challenged societal norms through evocative mixed-media art, fusing classical oil painting with traditional Chinese gongbi techniques to reveal beauty in the everyday. My work gained recognition in galleries and private collections, while my webcomic and social media presence (83K+ followers) expanded my reach as a thought leader in functional creativity.",
+            description: "Greated a 83K+ social media following through digital artistry (Photoshop, Final Cut Pro) and e-commerce site (HTML/CSS).  Managed commissions using Agile workflows (Asana) and exhibited mixed-media art in U.S. galleries.",
             skills: ["Adobe Photoshop", "HTML", "CSS", "Final Cut Pro", "Digital Marketing"]
         },{
             year: "2011 - 2013",
             company: "Fairchild Semiconductor",
             role: "Device/Test Engineer",
-            description: "I improved critical product yields by 20% through data-driven root cause analysis and test program enhancements, delivering $60K/month in cost savings. Additionally, I spearheaded cross-functional implementation of Dynamic Part Average Testing (DPAT), elevating product quality and strengthening customer confidence",
+            description: "Increased product yields by 20% ($720K/year savings) via data-driven test optimizations. Automated tool assignment system cut evaluation delays by 25%, overcoming production constraints.",
             skills: ["C++", "C", "Data Analysis", "Root Cause Analysis"]
         }]
 
