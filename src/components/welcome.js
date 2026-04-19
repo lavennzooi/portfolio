@@ -7,7 +7,7 @@ class Welcome extends React.Component {
         
         const tagline = " Software Developer & Designer"; 
 
-        const description = "I'm ambitious about engineering simple solutions from complex problems — scaleable, intuitive and world-changing.";
+        const description = "I'm ambitious about engineering simple solutions from complex problems — scalable, intuitive and world-changing.";
 
         return ( 
             <div id="welcome">
